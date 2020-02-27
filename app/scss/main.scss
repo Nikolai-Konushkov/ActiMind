@@ -262,9 +262,6 @@ $def-transition: .2s;
 	color: $main-text;
 	transition: $def-transition;
 	position: relative;
-	display: flex;
-	align-items: center;
-	width: max-content;
 	&:hover,&:focus{
 		color: $purple;
 	}
@@ -279,6 +276,7 @@ $def-transition: .2s;
     	height: 14px;
     	position: absolute;
     	right: -44px;
+    	top: 1px;
 	}
 }
 .slide__text-container{
@@ -435,6 +433,7 @@ $def-transition: .2s;
 		height: 36px;
 		position: absolute;
 		right: 0;
+		top: 0;
 		background-image: url('../img/menu-burger.svg');
 		background-position: center;
 		background-repeat: no-repeat;
@@ -463,6 +462,7 @@ $def-transition: .2s;
     	flex-direction: column;
 		box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.15);
 		display: none;
+		min-height: 362px;
 	}
 	.header__nav.header__menu--open{
 		display: flex;
@@ -470,12 +470,18 @@ $def-transition: .2s;
 	.nav__signup{
 		margin-top: 28px;
     	margin-bottom: 44px;
+    	position: absolute;
+    	bottom: 0;
+    	width: 181px;
+    	box-sizing: border-box;
+    	left: calc( 50% - 90px );
 	}
 	.nav__items-wrp{
 		flex-direction: column;
 		width: 100%;
 		border-top:	1px solid #D6B9FF;
 		margin-top: 0px;
+		background-color: #fff;
 	}
 	.nav__items-wrp--inner{
 		position: relative;
@@ -526,6 +532,7 @@ $def-transition: .2s;
 			content: '';
 			position: absolute;
 			right: 0;
+			top: 5px;
 			width: 10px;
 			height: 18px;
 			background-image: url('../img/arrow-open.svg');
@@ -535,6 +542,7 @@ $def-transition: .2s;
 		&:before{
 			width: 18px;
 			height: 10px;
+			top: 10px;
 			background-image: url('../img/arrow-up.svg');
 		}
 	}

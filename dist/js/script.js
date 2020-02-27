@@ -23,20 +23,27 @@ for (let i = 0; i < slide_text.length; i++) {
 }
 
 /* slider init */
-let mySwiper = new Swiper ('.features__slider', {
-    loop: true,
-    slidesPerView: 1,
-    slidesPerGroup: 1,
-    pagination: {
-      el: '.features__slider-pagination',
-    },
-    breakpoints: {
-    	1280: {
-    		slidesPerView: 2,
-    		slidesPerGroup: 2,
-    	},
-	}
-});
+/* IE не понимает Breakpoints в SwipperJS */
+let width=document.body.clientWidth;
+if(width >= 1280){
+	let mySwiper = new Swiper ('.features__slider', {
+	    loop: true,
+	    slidesPerView: 2,
+	    slidesPerGroup: 2,
+	    pagination: {
+	      el: '.features__slider-pagination',
+	    }
+	});
+} else {
+	let mySwiper = new Swiper ('.features__slider', {
+	    loop: true,
+	    slidesPerView: 1,
+	    slidesPerGroup: 1,
+	    pagination: {
+	      el: '.features__slider-pagination',
+	    }
+	});
+}
 
 /* Header-Fix*/
 let header = document.querySelector('.page__header');
