@@ -1,0 +1,22 @@
+let slider = [
+      {
+        "title": "First Feature",
+        "text": "Little Red Cap opened her eyes and when she saw the sunbeams dancing to and fro through the trees and how the ground was covered with beautiful flowers.",
+        "new": false
+      },
+      {
+        "title": "Second Feature",
+        "text": "Each time she picked one she thought that she could see an even more beautiful one a little way off, and she ran after it, going further and further into the woods.",
+        "new": false
+      },
+      {
+        "title": "Third Feature",
+        "text": "The wolf pressed the latch, and the door opened. He stepped inside, went straight to the grandmother's bed, and ate her up.",
+        "new": false
+      },
+      {
+        "title": "Fourth Feature",
+        "text": "Little Red Cap had run after the flowers. After she had gathered so many that she could not carry any more, she remembered her grandmother.",
+        "new": true
+      }
+];
