@@ -245,6 +245,8 @@ $def-transition: .2s;
 .slide__title{
 	font-size: 25px;
 	line-height: 130%;
+	margin: 0;
+    font-weight: 400;
 }
 .slide__text{
 	font-size: $normal-size;

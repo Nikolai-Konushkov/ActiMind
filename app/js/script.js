@@ -2,7 +2,7 @@
 let slider_wrp = document.querySelector('.features__slider-container');
 slider_wrp.classList.add('swiper-wrapper');
 for (let i = 0; i < slider.length; i++) {
-	let slide_code = '<div class="features__slide slide"><div class="slide__num">'+(i+1)+'</div><div class="slide__text-container"><div class="slide__new-label" show="'+slider[i].new+'">NEW</div><div class="slide__title">'+slider[i].title+'</div><div class="slide__text">'+slider[i].text+'</div><a href="#" class="slide__button">Learn More</a></div>';
+	let slide_code = '<div class="features__slide slide"><div class="slide__num">'+(i+1)+'</div><div class="slide__text-container"><div class="slide__new-label" show="'+slider[i].new+'">NEW</div><h2 class="slide__title">'+slider[i].title+'</h2><p class="slide__text">'+slider[i].text+'</p><a href="#" class="slide__button">Learn More</a></div>';
 	let slide_wrp = document.createElement('div');
 	slide_wrp.classList.add('features__slide-container');
 	slide_wrp.classList.add('swiper-slide');
